@@ -1,0 +1,161 @@
+
+/* Main Page */
+.purchased-page {
+    padding: 10px 5px 30px;
+    background: #fff;
+}
+
+/* Heading */
+.purchased-heading {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.purchased-heading h4 {
+    color: #18243a;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.purchased-heading p {
+    color: #7b8495;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+/* Purchase Card */
+.purchase-card {
+    height: 100%;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1px solid #e8edf5;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+}
+
+.purchase-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Header */
+.purchase-card-header {
+    background: #195468;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.purchase-card-header h5 {
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0;
+}
+
+/* Body */
+.purchase-card-body {
+    padding: 22px;
+}
+
+/* User Information */
+.purchase-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 13px 0;
+    border-bottom: 1px solid #edf0f5;
+}
+
+.purchase-info:last-child {
+    border-bottom: none;
+}
+
+.purchase-icon {
+    width: 42px;
+    height: 42px;
+    min-width: 42px;
+    background: #e6f8fc;
+    color: #08b9d8;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 17px;
+}
+
+.purchase-info span {
+    display: block;
+    color: #8490a1;
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.purchase-info h6 {
+    color: #354258;
+    font-size: 14px;
+    font-weight: 600;
+    margin: 0;
+    overflow-wrap: anywhere;
+}
+
+/* Footer */
+.purchase-card-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dce1e6;
+    padding: 15px 20px;
+    color: #239bb8;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.purchase-card-footer i {
+    margin-right: 8px;
+    color: #0bb8d8;
+}
+
+/* Tablet */
+@media(max-width: 991px) {
+    .purchased-page {
+        padding: 10px;
+    }
+
+    .purchase-card-body {
+        padding: 18px;
+    }
+}
+
+/* Mobile */
+@media(max-width: 576px) {
+    .purchased-page {
+        padding: 8px;
+    }
+
+    .purchased-heading h4 {
+        font-size: 22px;
+    }
+
+    .purchased-heading p {
+        font-size: 13px;
+    }
+
+    .purchase-card-header {
+        padding: 17px;
+    }
+
+    .purchase-card-header h5 {
+        font-size: 18px;
+    }
+
+    .purchase-card-body {
+        padding: 15px;
+    }
+
+    .purchase-info {
+        gap: 12px;
+    }
+
+    .purchase-info h6 {
+        font-size: 13px;
+    }
+}

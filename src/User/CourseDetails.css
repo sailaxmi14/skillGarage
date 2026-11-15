@@ -1,0 +1,201 @@
+.course-details-section {
+    width: 100%;
+    padding: 20px 15px 40px;
+    background-color: #fff;
+}
+
+.details-heading {
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.selected-course-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 32px;
+    color: #164E63;
+    margin-bottom: 30px;
+}
+
+
+.details-image-card {
+    border: none;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.details-course-img {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    max-height: 450px;
+    object-fit: cover;
+}
+
+.details-info-card {
+    border: none;
+    border-radius: 14px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.details-info-card .card-body {
+    padding: 30px;
+}
+
+.details-info-title {
+    font-weight: 700;
+    color: #164E63;
+    margin-bottom: 20px;
+}
+
+.details-description {
+    font-size: 15px;
+    line-height: 1.8;
+    color: #666;
+}
+
+
+.details-info-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 25px;
+    padding: 15px 0;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.detail-item > i {
+    font-size: 23px;
+    color: #329bb9;
+    width: 30px;
+}
+
+.detail-item small {
+    color: #888;
+    font-size: 13px;
+}
+
+.detail-item h6 {
+    font-weight: 700;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+.details-actions {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 25px;
+}
+
+.save-course-btn,
+.purchase-course-btn {
+    padding: 12px 22px;
+    border-radius: 7px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.save-course-btn {
+    border: 1px solid #164E63;
+    color: #164E63;
+    background: white;
+}
+
+.save-course-btn:hover {
+    background: #164E63;
+    color: white;
+}
+
+.purchase-course-btn {
+    background: #164E63;
+    color: white;
+    border: none;
+}
+
+.purchase-course-btn:hover {
+    background: #329bb9;
+    color: white;
+}
+
+
+.purchase-modal {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.purchase-modal .modal-header {
+    background-color: #164E63;
+    color: white;
+}
+
+.purchase-modal .btn-close {
+    filter: brightness(0) invert(1);
+}
+
+.purchase-modal .modal-body {
+    padding: 25px;
+}
+
+.purchase-modal .form-control {
+    min-height: 45px;
+}
+
+
+@media (max-width: 991px) {
+
+    .details-course-img {
+        height: 350px;
+    }
+
+    .details-info-card .card-body {
+        padding: 22px;
+    }
+
+}
+
+@media (max-width: 576px) {
+
+    .course-details-section {
+        padding: 15px 5px 30px;
+    }
+
+    .details-heading {
+        font-size: 21px;
+    }
+
+    .selected-course-title {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
+    .details-course-img {
+        min-height: 220px;
+        height: 240px;
+    }
+
+    .details-info-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .details-actions {
+        flex-direction: column;
+    }
+
+    .details-actions button {
+        width: 100%;
+    }
+
+    .details-info-card .card-body {
+        padding: 20px;
+    }
+
+}

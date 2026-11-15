@@ -1,0 +1,214 @@
+.manage-page {
+    padding: 10px 5px 30px;
+    background: #fff;
+}
+
+.manage-title {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.manage-title h4 {
+    color: #18243a;
+    font-size: 27px;
+    font-weight: 700;
+}
+
+.manage-title p {
+    color: #7b8495;
+    font-size: 15px;
+    margin-top: 8px;
+}
+
+.explore-course-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.10);
+    transition: 0.3s ease;
+}
+
+.explore-course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.explore-card-header {
+    background-color: #195468;
+    padding: 20px 12px;
+    text-align: center;
+}
+
+.explore-card-header h4 {
+    color: white;
+    font-size: 21px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.explore-card-image {
+    padding: 20px 22px 10px;
+    height: 245px;
+}
+
+.explore-card-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 9px;
+}
+
+.explore-card-body {
+    padding: 10px 22px 20px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.explore-description {
+    color: #738095;
+    font-size: 14px;
+    line-height: 1.8;
+    min-height: 75px;
+}
+
+.explore-info {
+    border-top: 1px solid #e9edf2;
+    padding-top: 15px;
+    margin-top: auto;
+}
+
+.explore-info p {
+    color: #63748a;
+    font-size: 14px;
+    margin-bottom: 12px;
+}
+
+.explore-info i {
+    color: #08b9d8;
+    width: 27px;
+    font-size: 15px;
+}
+
+
+.explore-card-footer {
+    background: #f8f9fa;
+    border-top: 1px solid #dce1e6;
+    padding: 16px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.explore-card-footer h5 {
+    color: #239bb8;
+    font-size: 17px;
+    font-weight: 700;
+    margin: 0;
+}
+
+.manage-actions {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.manage-actions button {
+    border: none;
+    background: transparent;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    padding: 5px 2px;
+}
+
+.manage-update {
+    color: #159bbd;
+}
+
+.manage-update:hover {
+    color: #086a8c;
+}
+
+.manage-delete {
+    color: #dc3545;
+}
+
+.manage-delete:hover {
+    color: #a71d2a;
+}
+
+@media(max-width: 991px) {
+
+    .manage-page {
+        padding: 10px;
+    }
+
+    .explore-card-image {
+        height: 210px;
+    }
+
+    .explore-card-footer {
+        padding: 14px;
+    }
+}
+
+@media(max-width: 576px) {
+
+    .manage-page {
+        padding: 8px;
+    }
+
+    .manage-title h4 {
+        font-size: 22px;
+    }
+
+    .manage-title p {
+        font-size: 13px;
+    }
+
+    .explore-card-header {
+        padding: 17px 10px;
+    }
+
+    .explore-card-header h4 {
+        font-size: 19px;
+    }
+
+    .explore-card-image {
+        height: 220px;
+        padding: 15px 15px 8px;
+    }
+
+    .explore-card-body {
+        padding: 10px 16px 15px;
+    }
+
+    .explore-description {
+        font-size: 13px;
+        min-height: auto;
+        margin-bottom: 20px;
+    }
+
+    .explore-info p {
+        font-size: 13px;
+    }
+
+    .explore-card-footer {
+        padding: 14px 15px;
+    }
+
+    .explore-card-footer h5 {
+        font-size: 15px;
+    }
+
+    .manage-actions {
+        gap: 10px;
+    }
+}
